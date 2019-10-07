@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Built-By: 40749
+Build-Jdk: 10.0.1
+Implementation-Title: ex2
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: cn.edu.hqu.javaee
+Main-Class: ${start-class}
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app >
+<display-name>Archetype Created Web Application</display-name>
+
+<!-- <servlet>-->
+<!--     <servlet-name>dispatcherservlet</servlet-name>-->
+<!--     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>-->
+<!--     <load-on-startup>1</load-on-startup>-->
+<!-- </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>dispatcherservlet</servlet-name>-->
+<!--        <url-pattern>/</url-pattern>-->
+<!--    </servlet-mapping>-->
+    <servlet>
+        　　<servlet-name>DispatcherServlet</servlet-name>
+        　　<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        　　<init-param>
+        　　　　<!-- 指定SpringMVC配置文件 -->
+        　　　　<param-name>contextConfigLocation</param-name>
+        　　　　<param-value>classpath:springmvc.xml</param-value>
+        　　</init-param>
+    </servlet>
+    <servlet-mapping>
+        　　<!-- 设置http请求拦截，如*.do，这里设置的是拦截所有 -->
+        　　<servlet-name>DispatcherServlet</servlet-name>
+        　　<url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+</web-app>
